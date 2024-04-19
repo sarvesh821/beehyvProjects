@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-between;
+            background-color: aquamarine;
+        }
+        .main div{
+            height: 60px;
+            width: 60px;
+            background: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1">1<span style="pointer-events: none;">span</span></div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+        <div class="d6">6</div>
+        <div class="d7">7</div>
+        <div class="d8">8</div>
+        <div class="d9">9</div>
+        <div class="d10">10</div>
+    </div>
+    <script>
+        const list= document.querySelectorAll(".main Div")
+        // for (let i = 0; i < list.childElementCount; i++) {
+        //     list.children[i].addEventListener('click',(e)=>{
+        //         console.log(e.target);
+        //         // console.log(list.children[i].innerText);
+        //         // console.log("4");
+        //     }) 
+        // }
+
+        list.forEach((ele) => {
+            // ele.addE
+            ele.addEventListener('click',(e)=>{
+                console.log(e.target.tagName);
+                ele.children[1].
+            })
+        });
+    </script>
+</body>
+</html>

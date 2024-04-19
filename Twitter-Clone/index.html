@@ -1,0 +1,442 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/img/icons8-twitter-48.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Twitter Clone</title>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <a href="#" class="logo"><i class="fa-brands fa-x-twitter"></i></a>
+            <ul>
+                <li class="li_active"><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-hashtag"></i> Explore</a></li>
+                <li><a href="#"></i><i class="fa-solid fa-bell"></i>Notification</a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i>Message</a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i>Bookmark</a></li>
+                <li><a href="#"><i class="fa-solid fa-list"></i></i>LIST</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></li>
+                <li><a href="#"><i class="fa-solid fa-ellipsis"></i>MORE</a></li>
+            </ul>
+            <button>Tweet</button>
+        </aside>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search on twitter...">
+                </div>
+                <div class="user">
+                    <h6>Hey,Sarvesh!</h6>
+                    <img src=".\images\img\icons8-male-user-48.png">
+                </div>
+            </nav>
+            <div class="profile_post_follow_bx">
+                <div class="profile_bx">
+                    <div class="profile_card">
+                        <img src="./images/icon/bluetick.png" alt="" class="blue_tick_pc">
+                        <img src="./images/img/icons8-male-user-48.png" alt="" class="profile_img">
+                        <h5>Sarvesh Goyal</h5>
+                        <h6>@kds_Coder</h6>
+                        <address>
+                            <a href="#">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mansa
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-earth-asia"></i>
+                            </a>
+                        </address>
+                        <p>Developer focused on business and family</p>
+                        <div class="data">
+                            <div class="data_card">
+                                <p>Tweets</p>
+                                <h4>857</h4>
+                            </div>
+                            <div class="data_card">
+                                <p>Followers</p>
+                                <h4>11.4k</h4>
+                            </div>
+                            <div class="data_card">
+                                <p>Following</p>
+                                <h4>243</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity_bx">
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-eye"></i>
+                            <h6>Activity</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h6>Moments</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-user-group"></i>
+                            <h6>Friends</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-gear"></i>
+                            <h6>Edit Profile</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="post_follow_bx">
+                    <div class="post">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Tweets</a></li>
+                                <li><a href="#">Tweets & Followers</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Likes</a></li>
+                            </ul>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </nav>
+                        <div class="post_main_bx">
+                            <!-- tweet box start -->
+                            <div class="home_page_first_bx">
+                                <img src="./images/img/icons8-male-user-48.png" alt="" class="home_profile_pic">
+                                <div class="write_tweet_bx">
+                                    <button id="audience_btn">Everyone <i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="show_bx show_bx_1">
+                                        <h6>Choose audience</h6>
+                                        <li class="check_audience">
+                                            <div>
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <h6>Everyone</h6>
+
+                                            </div>
+                                            <i class="fa-solid fa-check check_audience_i"></i>
+                                        </li>
+                                        <li class="check_audience">
+                                            <div>
+                                                <i class="fa-solid fa-users-gear"></i>
+                                                <div class="edit_tweet_user">
+                                                    <h6>Tweet Circle</h6>
+                                                    <span>0 People</span><button>Edit</button>
+                                                </div>
+
+                                            </div>
+                                            <i class="fa-solid fa-check check_audience_i"></i>
+                                        </li>
+                                    </div>
+                                    <br>
+                                    <textarea name="" id="tweet_text_area" placeholder="What's happening"
+                                        maxlength="200" oninput="auto_grow(this)"></textarea>
+                                    <button class="select_reply_btn">
+                                        <i class="fa-solid fa-earth-asia"></i>
+                                        Everyone can reply
+                                    </button>
+                                    <div class="show_bx who_can_reply_bx">
+                                        <h6>Choose audience</h6>
+                                        <p>Choose who can reply to this tweet.<br>Anyone mentioned can always reply</p>
+                                        <li class="who_can_reply">
+                                            <div>
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <h6>Everyone Can reply</h6>
+
+                                            </div>
+                                            <i class="fa-solid fa-check who_can_reply_i"></i>
+                                        </li>
+                                        <li class="who_can_reply">
+                                            <div>
+                                                <i class="fa-solid fa-user-check who_can_reply_i"></i>
+                                                <h6>People you follow</h6>
+
+                                            </div>
+                                            <i class="fa-solid fa-check"></i>
+                                        </li>
+                                        <li class="who_can_reply">
+                                            <div>
+                                                <i style="font-style: normal;">@</i>
+                                                <h6>Only people you mention</h6>
+
+                                            </div>
+                                            <i class="fa-solid fa-check who_can_reply_i"></i>
+                                        </li>
+
+                                    </div>
+                                    <div class="attach_media">
+                                        <div class="select_media">
+                                            <div class="media_card">
+                                                <input type="file" accept="image/jpg,image/png,image/gif,video/mp4">
+                                                <i class="fa-solid fa-image"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-gift"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-square-poll-vertical"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-regular fa-face-smile-beam"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-calendar-week"></i>
+                                            </div>
+                                            <div class="media_card">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                        </div>
+                                        <div class="tweet_letter_count">
+                                            <h6 id="text_limit">100%</h6>
+                                            <button id="tweet_post">Tweet</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="./images/img/icons8-male-user-48.png">
+                                </div>
+                                <div class="content">
+                                    <h6 class="retweet"><i class="fa-solid fa-repeat"></i> RONALDO TWEETED</h6>
+                                    <div class="user_name_time">
+
+                                        <h5>Sarvesh Goyal <img src="./images/icon/bluetick.png">
+                                            <p>@Kds coder</p>
+                                        </h5>
+                                        <h6><i class="fa-regular fa-clock"> </i>25 min</h6>
+                                    </div>
+                                    <h3>Very good words...</h3>
+                                    <div class="retweet_content_bx">
+                                        <div class="user_name_time">
+
+                                            <h5><img src="./images/img/user2.jpg"> Cristiano Ronaldo
+                                                <p>@ronaldo</p>
+                                            </h5>
+                                            <h6><i class="fa-regular fa-clock"> </i> 1 hour</h6>
+
+                                        </div>
+                                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi
+                                            obcaecati expedita...</h3>
+                                    </div>
+                                    <div class="tweet_card_social_data">
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>38</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-repeat"></i>
+                                            <span>68</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>629</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-share"></i>
+                                        </div>
+                                    </div>
+                                    <!-- <button>Delete</button>
+                                    <button>Edit</button> -->
+                                    <div class="edit-delete-buttons">
+                                        <button class="edit-button">Edit</button>
+                                        <button class="delete-button">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="./images/img/icons8-male-user-48.png">
+                                </div>
+                                <div class="content">
+
+                                    <div class="user_name_time">
+
+                                        <h5>Sarvesh Goyal <img src="./images/icon/bluetick.png">
+                                            <p>@Kds coder</p>
+                                        </h5>
+                                        <h6><i class="fa-regular fa-clock"> </i>2 hours</h6>
+                                    </div>
+                                    <h3>Today on Diwali,Jaipur is decorated like a bride.</h3>
+                                    <div class="image_post_bx">
+                                        <img src="./images/img/img1.jpg" alt="">
+                                        <img src="./images/img/img2.webp" alt="">
+                                        <img src="./images/img/img3.jpg" alt="">
+                                    </div>
+                                    <div class="tweet_card_social_data">
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>128</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-repeat"></i>
+                                            <span>283</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>4.8k</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-share"></i>
+                                        </div>
+                                    </div>
+                                    <!-- <button>Delete</button>
+                                    <button>Edit</button> -->
+                                    <div class="edit-delete-buttons">
+                                        <button class="edit-button">Edit</button>
+                                        <button class="delete-button">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="./images/img/user4.jpg">
+                                </div>
+                                <div class="content">
+
+                                    <div class="user_name_time">
+
+                                        <h5>President Biden <img src="./images/icon/bluetick.png">
+                                            <p>@pouts</p>
+                                        </h5>
+                                        <h6><i class="fa-regular fa-clock"> </i>4 hours</h6>
+                                    </div>
+                                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore, velit
+                                        vel repellat ad, mollitia nisi vero illo incidunt non perspiciatis a aspernatur
+                                        atque nesciunt nam necessitatibus impedit laborum! Quos?
+                                    </h3>
+
+                                    <div class="tweet_card_social_data">
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span>368</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-repeat"></i>
+                                            <span>4523</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>445.8K+</span>
+                                        </div>
+                                        <div class="tweet_social_card">
+                                            <i class="fa-solid fa-share"></i>
+                                        </div>
+                                    </div>
+                                    <!-- <button>Delete</button>
+                                    <button>Edit</button> -->
+                                    <div class="edit-delete-buttons">
+                                        <button class="edit-button">Edit</button>
+                                        <button class="delete-button">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follow_bx">
+                        <div class="trend_for_you">
+                            <nav>
+                                <h6>Trends for you</h6>
+                                <i class="fa-solid fa-gear"></i>
+                            </nav>
+                            <div class="trend_bx">
+                                <div class="rate">
+                                    <li><a href="#">#coldplay<br>
+                                            <p>937k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li>
+                                    <div class="interest">
+                                        <button class="smile"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                        <button class="frown"><i class="fa-solid fa-face-frown"></i>not
+                                            Interested</button>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <li><a href="#">#KaneWilliamson<br>
+                                            <p>1.06k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li>
+                                    <div class="interest">
+                                        <button class="smile"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                        <button class="frown"><i class="fa-solid fa-face-frown"></i>not
+                                            Interested</button>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <li><a href="#">#conway<br>
+                                            <p>5.15k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li>
+                                    <div class="interest">
+                                        <button class="smile"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                        <button class="frown"><i class="fa-solid fa-face-frown"></i>not
+                                            Interested</button>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <li><a href="#">#rishabpant<br>
+                                            <p>7.18k tweets</p>
+                                        </a><i class="fa-solid fa-chevron-down"></i></li>
+                                    <div class="interest">
+                                        <button class="smile"><i class="fa-solid fa-face-smile"></i>Interested</button>
+                                        <button class="frown"><i class="fa-solid fa-face-frown"></i>not
+                                            Interested</button>
+                                    </div>
+                                </div>
+
+                                <button class="see_more">SEE MORE</button>
+                            </div>
+                        </div>
+                        <div class="you_should_follow trend_for_you">
+                            <nav>
+                                <h6>You Should Follow</h6>
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </nav>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="./images/img/user1.jpg" class="follow_profile">
+                                    <div class="user_name">
+                                        <div class="user_name_follow">
+                                            <h6>MS Dhoni</h6><img src="./images/icon/bluetick.png">
+                                        </div>
+                                        <p>@msdhoni</p>
+                                    </div>
+                                </div>
+                                <button>follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="./images/img/user2.jpg" class="follow_profile">
+                                    <div class="user_name">
+                                        <div class="user_name_follow">
+                                            <h6>Cristiano Ronaldo</h6><img src="./images/icon/bluetick.png">
+                                        </div>
+                                        <p>@ronaldo</p>
+                                    </div>
+                                </div>
+                                <button>follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="./images/img/user3.jpg" class="follow_profile">
+                                    <div class="user_name">
+                                        <div class="user_name_follow">
+                                            <h6>Virat Kholi</h6><img src="./images/icon/bluetick.png">
+                                        </div>
+                                        <p>@viratkholi</p>
+                                    </div>
+                                </div>
+                                <button>follow</button>
+                            </div>
+                            <button class="see_more">SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="app.js"></script>
+</body>
+
+</html>
